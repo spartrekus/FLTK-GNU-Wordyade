@@ -1,0 +1,24 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+decl {\#include "func.c"} {private local
+} 
+
+decl {\#include "fl.c"} {private local
+} 
+
+Function {main(int argc,char *argv[])} {open return_type int
+} {
+  code {textbuf = new Fl_Text_Buffer;
+  style_init();
+
+  Fl_Window* window = new_view();
+
+  window->show(1, argv);
+
+  if (argc > 1) load_file(argv[1], -1);
+
+  return Fl::run();} {selected
+  }
+} 
