@@ -51,16 +51,7 @@ char *strsplit(char *str , int mychar , int myitem )
 
 
 
-
-/*
-  1.mvprintw( rows-2,cols-9, "%s" , strcut( "helloludo" , 3 , 6 ) );
-                                              3456 
-       > it outputs lolu 
-  2.now it gives:
-  mvprintw( rows-2,cols-9, "%s" , strcut( "helloludo" , 3 , 6 ) );
-                                             3456       
-       > it outputs llol   (which might be okay)
-*/
+ 
 char *strcut( char *str , int myposstart, int myposend )
 {  
       char ptr[strlen(str)+1];
